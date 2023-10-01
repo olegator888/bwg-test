@@ -138,7 +138,7 @@ const QuestionPage = () => {
       <div className="w-full h-[1px] bg-zinc-300" />
       <br />
       {answer ? (
-        <div className="p-6 bg-green-100 rounded-xl">
+        <div className="p-6 bg-green-100 rounded-xl w-full">
           <h2 className="pl-4">Принятый ответ</h2>
           <div
             className="p-6"
