@@ -106,7 +106,9 @@ const QuestionPage = () => {
       <div className="text-center flex flex-col items-center gap-1 mt-6 mb-4">
         <div className="flex items-center gap-2">
           <Avatar className="shrink-0" src={question.owner.profile_image} />
-          <p>{question.owner.display_name}</p>
+          <p
+            dangerouslySetInnerHTML={{ __html: question.owner.display_name }}
+          />
         </div>
         <h1
           className="my-2"

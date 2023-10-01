@@ -11,7 +11,10 @@ const CommentCard = ({ comment }: CommentProps) => {
           src={comment.owner.profile_image}
         />
         <div className="flex flex-col gap-1">
-          <h4 className="mb-1 mt-0">{comment.owner.display_name}</h4>
+          <h4
+            className="mb-1 mt-0"
+            dangerouslySetInnerHTML={{ __html: comment.owner.display_name }}
+          />
           <p
             className="m-0"
             dangerouslySetInnerHTML={{ __html: comment.body }}
